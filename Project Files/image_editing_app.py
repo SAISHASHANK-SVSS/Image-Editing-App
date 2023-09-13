@@ -4,8 +4,8 @@ from PIL import Image, ImageEnhance
 import numpy as np
 import os
 
-face_cascade =cv2.CascadeClassifier("C:\\Program Files\\Python311\Lib\\site-packages\\cv2\\data\\haarcascade_frontalface_default.xml")
-eye_cascade = cv2.CascadeClassifier("C:\\Program Files\\Python311\\Lib\\site-packages\\cv2\\data\\haarcascade_eye.xml")
+face_cascade =cv2.CascadeClassifier("Haarcascade_Path")
+eye_cascade = cv2.CascadeClassifier("Haarcascade_Path")
 
 def detect_faces(our_image):
     new_img = np.array(our_image.convert("RGB"))
